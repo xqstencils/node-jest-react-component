@@ -24,9 +24,18 @@ module.exports = {
       {
         test: /\.s?css$/,
         use: [
-          'style-loader',
-          'css-loader?modules&localIdentName=[name]__[local]-[hash:base64:5]',
-          'sass-loader'
+          { loader: 'style-loader' },
+          { loader: 'css-loader', options: { modules: true, localIdentName: '[name]__[local]-[hash:base64:5]' } },
+          {
+            loader: 'postcss-loader',
+            options: {
+              ident: 'postcss',
+              plugins: [
+                require('autoprefixer')({ browsers: ['> 0.01%'] })
+              ]
+            }
+          },
+          { loader: 'sass-loader' }
         ]
       }
     ]
