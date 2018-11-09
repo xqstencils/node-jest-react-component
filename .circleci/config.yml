@@ -57,6 +57,9 @@ jobs:
       - restore_cache:
           key: app-build-cache
       - run:
+          name: Set Config
+          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
+      - run:
           name: Git release
           command: bash ./ci/release.sh
 
