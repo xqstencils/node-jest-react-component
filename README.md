@@ -3,13 +3,11 @@ This is a stencil for basic server base on node and jest.
 
 ## Current Status:
 
-[![Alpine 3.7](https://img.shields.io/badge/alpine-3.7-brightgreen.svg)]()
-[![Nginx 1.14](https://img.shields.io/badge/nginx-1.14-brightgreen.svg)]()
-[![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)]()
-[![Docker Pulls](https://img.shields.io/docker/pulls/xqstencils/node-jest-react-component.svg)](https://hub.docker.com/r/xqstencils/node-jest-react-component/)
-[![Docker Stars](https://img.shields.io/docker/stars/xqstencils/node-jest-react-component.svg)](https://hub.docker.com/r/xqstencils/node-jest-react-component/)
-[![Docker image](https://images.microbadger.com/badges/image/xqstencils/node-jest-react-component.svg)](https://microbadger.com/images/xqstencils/node-jest-react-component)
+[![NPM Version](https://img.shields.io/npm/v/@xq-stencil/node-jest-react-component.svg)](https://npmjs.org/package/@xq-stencil/node-jest-react-component)
+[![NPM Downloads](https://img.shields.io/npm/dm/@xq-stencil/node-jest-react-component.svg)](https://npmjs.org/package/@xq-stencil/node-jest-react-component)
 [![Build Status](https://circleci.com/gh/xqstencils/node-jest-react-component.svg?style=svg)](https://circleci.com/gh/xqstencils/node-jest-react-component)
+[![NPM](https://nodei.co/npm/@xq-stencil/node-jest-react-component.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/@xq-stencil/node-jest-react-component/)
+
 
 ## Features:
 
