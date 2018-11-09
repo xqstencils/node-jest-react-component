@@ -24,7 +24,7 @@ fi
 git checkout -b tmp-release
 
 echo 'Commit & push package files'
-git add -f dist/
+git add -f lib/
 git commit -m "Release v$CURRENT_VERSION"
 git tag "v$CURRENT_VERSION"
 git push --tags
