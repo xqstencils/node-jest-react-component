@@ -22,7 +22,7 @@ jobs:
       - save_cache:
           key: app-build-cache
           paths:
-            - dist
+            - lib
   test:
     docker:
       - image: circleci/node:6

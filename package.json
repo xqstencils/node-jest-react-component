@@ -1,6 +1,6 @@
 {
   "name": "@xq-stencil/node-jest-react-component",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "A simple server stencil based on node and used jest for test",
   "main": "lib/index.js",
   "engines": {
