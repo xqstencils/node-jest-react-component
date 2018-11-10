@@ -1,6 +1,6 @@
 {
   "name": "@xq-stencil/node-jest-react-component",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A simple server stencil based on node and used jest for test",
   "main": "lib/index.js",
   "engines": {
@@ -12,7 +12,7 @@
   "scripts": {
     "clean": "rm -rf ./lib",
     "babel": "babel src --out-dir lib --copy-files",
-    "babel:watch": "watch 'npm run babel' ./src",
+    "babel:watch": "watch 'yarn babel' ./src",
     "build": "yarn clean && yarn babel",
     "lint": "eslint src",
     "test": "jest --coverage --config config/jest.config.js",
