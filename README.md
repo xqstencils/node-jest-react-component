@@ -1,5 +1,5 @@
-# Node Jest Server stencil
-This is a stencil for basic server base on node and jest.
+# Node Jest React Component stencil
+This is a stencil for react component base on node and jest.
 
 ## Current Status:
 
@@ -11,12 +11,12 @@ This is a stencil for basic server base on node and jest.
 
 ## Features:
 
-* Run the test and publish your package with ci.
+* Support Publish your package to git & npm with ci.
 * Support CircleCi for pipeline.
 * Support ES7 & ES6 syntax.
 * Support ESlint to check the code.
 * Support Jest to test your code.
-* Support yarn audit to do security check for the dependencis.
+* Support Yarn audit to do security check for dependencies.
 
 ## Development:
 
