@@ -6,6 +6,7 @@ This is a stencil for react component base on node and jest.
 [![NPM Version](https://img.shields.io/npm/v/@xq-stencil/node-jest-react-component.svg)](https://npmjs.org/package/@xq-stencil/node-jest-react-component)
 [![NPM Downloads](https://img.shields.io/npm/dm/@xq-stencil/node-jest-react-component.svg)](https://npmjs.org/package/@xq-stencil/node-jest-react-component)
 [![Build Status](https://circleci.com/gh/xqstencils/node-jest-react-component.svg?style=svg)](https://circleci.com/gh/xqstencils/node-jest-react-component)
+
 [![NPM](https://nodei.co/npm/@xq-stencil/node-jest-react-component.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/@xq-stencil/node-jest-react-component/)
 
 
