@@ -61,10 +61,10 @@ jobs:
           name: Compile & package
           command: yarn build
       - run:
-          name: git release
+          name: Git release
           command: bash ./ci/release-git.sh
       - run:
-          name: npm release
+          name: Npm release
           command: bash ./ci/release-npm.sh
 
 workflows:
