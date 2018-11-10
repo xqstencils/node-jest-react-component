@@ -16,9 +16,7 @@ This is a stencil for basic server base on node and jest.
 * Support ES7 & ES6 syntax.
 * Support ESlint to check the code.
 * Support Jest to test your code.
-* Support Nsp to do security check for the dependencis.
-* Support Build docker image and push to docker hub.
-* Support Deploy app to Heroku.
+* Support yarn audit to do security check for the dependencis.
 
 ## Development:
 
@@ -67,7 +65,7 @@ $> yarn test:watch
 ### Security check
 
 ```
-$> yarn security:check
+$> yarn audit
 ```
 
 ### Setup CI
