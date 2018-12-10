@@ -1,13 +1,14 @@
 {
   "name": "@xq-stencil/node-jest-react-component",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "A simple server stencil based on node and used jest for test",
   "main": "lib/index.js",
   "engines": {
     "node": ">= 6"
   },
   "files": [
-    "lib"
+    "lib",
+    "src"
   ],
   "scripts": {
     "clean": "rm -rf ./lib",
