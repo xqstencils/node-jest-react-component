@@ -4,6 +4,7 @@ set -e -u
 CURRENT_VERSION=`cat package.json | jq -r .version`
 
 echo 'Publish package to git ...'
+yarn prune && yarn build
 
 echo 'Config git'
 name=$(git log -1 --pretty=format:"%an")

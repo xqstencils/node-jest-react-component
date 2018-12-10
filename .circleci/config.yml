@@ -49,9 +49,6 @@ jobs:
           name: Set Config
           command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
       - run:
-          name: Compile
-          command: yarn build
-      - run:
           name: Git release
           command: bash ./ci/release-git.sh
       - run:
