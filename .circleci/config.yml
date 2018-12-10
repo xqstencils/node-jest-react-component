@@ -12,17 +12,10 @@ jobs:
       - run:
           name: Install package dependencies
           command: yarn install
-      - run:
-          name: Compile
-          command: yarn build
       - save_cache:
           key: dependency-cache-{{ checksum "package.json" }}
           paths:
             - node_modules
-      - save_cache:
-          key: app-build-cache-{{ checksum "package.json" }}
-          paths:
-            - lib
   test:
     docker:
       - image: circleci/node:6
@@ -31,8 +24,6 @@ jobs:
       - checkout
       - restore_cache:
           key: dependency-cache-{{ checksum "package.json" }}
-      - restore_cache:
-          key: app-build-cache-{{ checksum "package.json" }}
       - run:
           name: Upgrade yarn
           command: sudo npm install --global yarn
@@ -54,11 +45,12 @@ jobs:
       - checkout
       - restore_cache:
           key: dependency-cache-{{ checksum "package.json" }}
-      - restore_cache:
-          key: app-build-cache-{{ checksum "package.json" }}
       - run:
           name: Set Config
           command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
+      - run:
+          name: Compile
+          command: yarn build
       - run:
           name: Git release
           command: bash ./ci/release-git.sh
